@@ -10,11 +10,11 @@ int main()
 {
     //vector<int> vec_int { 0, 11, 222, 333, 444, 555, 666, 777, 888, 999 };
     //BinarySearch<vector<int>, int> binary_search_int(vec_int, vec_int.size());
-    //cout << binary_search_int.find(666) << endl;
+    //cout << binary_search_int.search(666) << endl;
 
     //vector<string> vec_str{ "aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "qqq", "rrr", "sss" };
     //BinarySearch<vector<string>, string> binary_search_str(vec_str, vec_str.size());
-    //cout << binary_search_str.find("fff") << endl;
+    //cout << binary_search_str.search("fff") << endl;
 
     //vector<int> vec_int{ 4, 2, 33, 1, 55, 8, 56, 22, 3, 44 };
 
