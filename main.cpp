@@ -2,6 +2,7 @@
 #include <vector>
 #include "BinarySearch.h"
 #include "SelectionSort.h"
+#include "InsertionSort.h"
 
 using namespace std;
 
@@ -27,8 +28,11 @@ int main()
 
     vector<string> vec_int { "d", "c", "f", "a", "s", "bb", "bbb", "k", "q", "x" };
 
-    SelectionSort<vector<string>> selection_sort(vec_int, vec_int.size());
-    auto f = selection_sort.sort();
+    //SelectionSort<vector<string>> selection_sort(vec_int, vec_int.size());
+    //auto f = selection_sort.sort();
+
+    InsertionSort<vector<string>> insertion_sort(vec_int, vec_int.size());
+    auto f = insertion_sort.sort();
 
     for (auto val : f) {
         cout << val << endl;
