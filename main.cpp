@@ -14,12 +14,16 @@ using namespace std;
 
 int main() {
 
-    vector<int> vec_int { 12, 9, 3, 7, 14, 11, 6, 2, 10, 5 };
-    //vector<std::string> vec_str { "d", "c", "f", "a", "s", "bb", "bbb", "k", "q", "x" };
+    //vector<int> vec_int { 12, 9, 3, 7, 14, 11, 6, 2, 10, 5 };
+    ////vector<std::string> vec_str { "d", "c", "f", "a", "s", "bb", "bbb", "k", "q", "x" };
 
-    QuickSort<vector<int>> quick_sort(vec_int, vec_int.size());
+    //QuickSort<vector<int>> quick_sort(vec_int, vec_int.size());
 
-    auto result = quick_sort.sort_recursive();
+    //auto result = quick_sort.sort_recursive();
+
+    vector<int> result { 12, 9, 3, 7, 14, 11, 6, 2, 10, 5 };;
+    result.assign(5, 1);
+    result.assign(5, 2);
 
     for (auto val : result) {
         cout << val << " ";
