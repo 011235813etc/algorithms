@@ -1,42 +1,29 @@
 #include <iostream>
 #include <vector>
+#include <iterator>
+#include <string>
 #include "BinarySearch.h"
 #include "SelectionSort.h"
 #include "InsertionSort.h"
+#include "MergeSort.h"
 
 using namespace std;
 
 
-int main()
-{
-    //vector<int> vec_int { 0, 11, 222, 333, 444, 555, 666, 777, 888, 999 };
-    //BinarySearch<vector<int>, int> binary_search_int(vec_int, vec_int.size());
-    //cout << binary_search_int.search(666) << endl;
+int main() {
 
-    //vector<string> vec_str{ "aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "qqq", "rrr", "sss" };
-    //BinarySearch<vector<string>, string> binary_search_str(vec_str, vec_str.size());
-    //cout << binary_search_str.search("fff") << endl;
+    //vector<int> vec_int { 12, 9, 3, 7, 14, 11, 6, 2, 10, 5 };
+    vector<std::string> vec_str { "d", "c", "f", "a", "s", "bb", "bbb", "k", "q", "x" };
 
-    //vector<int> vec_int{ 4, 2, 33, 1, 55, 8, 56, 22, 3, 44 };
+    MergeSort<vector<std::string>, std::string> merge_sort(vec_str, vec_str.size());
 
-    //SelectionSort<vector<int>> selection_sort(vec_int, vec_int.size());
-    //auto f = selection_sort.sort();
+    auto result = merge_sort.sort_recursive();
 
-    //for (auto val : f) {
-    //    cout << val << endl;
-    //}
-
-    vector<string> vec_int { "d", "c", "f", "a", "s", "bb", "bbb", "k", "q", "x" };
-
-    //SelectionSort<vector<string>> selection_sort(vec_int, vec_int.size());
-    //auto f = selection_sort.sort();
-
-    InsertionSort<vector<string>> insertion_sort(vec_int, vec_int.size());
-    auto f = insertion_sort.sort();
-
-    for (auto val : f) {
-        cout << val << endl;
+    for (auto val : result) {
+        cout << val << " ";
     }
+    cout << endl;
+   
 
     return 0;
 }
